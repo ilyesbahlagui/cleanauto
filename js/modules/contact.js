@@ -7,7 +7,7 @@ export function initContact() {
     };
 
     const validatePhone = (phone) => {
-        return /^[0-9+\s-]{8,10}$/.test(phone);
+        return /^[0-9+\s-]{10}$/.test(phone);
     };
 
     const showValidation = (input, isValid, message = '') => {

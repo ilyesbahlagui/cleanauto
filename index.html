@@ -133,7 +133,10 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Clean Auto. Tous droits réservés.</p>
+            <p></p>
+        <script>
+            document.querySelector('.footer p').innerHTML = `&copy; ${new Date().getFullYear()} Clean Auto. Tous droits réservés.`;
+        </script>
         </div>
     </footer>
 

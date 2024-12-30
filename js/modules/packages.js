@@ -8,7 +8,7 @@ const packages = [
       'Aspiration : tapis, moquettes, sièges, coffre',
       'Nettoyage plastiques et vitres',
     ],
-    icon: '🌟',
+    icon: '🚗', 
     type: 'standard'
   },
   {
@@ -19,7 +19,7 @@ const packages = [
       'Shampouineuse : moquettes, tapis, sièges, coffre',
       'Nettoyage plastiques et vitres',
     ],
-    icon: '👑',
+    icon: '✨',
     type: 'premium'
   },
   {
@@ -30,7 +30,7 @@ const packages = [
       'Shampouineuse et nettoyage plastiques',
       'Lavage extérieur : carrosserie, jantes, portes',
     ],
-    icon: '💎',
+    icon: '💎', 
     type: 'platinum'
   },
   // {
