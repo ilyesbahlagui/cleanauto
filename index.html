@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Pro - Design Moderne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/packages.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">Clean Auto</div>
+            <div class="navbar-toggle">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#forfaits">Forfaits</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="accueil" class="hero fade-in">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h1 class="slide-in-top">Services Professionnels</h1>
+            <p class="slide-in-bottom">Excellence et qualité à votre service</p>
+            <a href="#contact" class="cta-button pulse">Réserver maintenant</a>
+        </div>
+    </header>
+
+    <section id="forfaits" class="packages">
+        <div class="container">
+            <h2 class="section-title">Nos Forfaits</h2>
+            <div class="packages-grid">
+                <!-- Les cartes seront générées par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="services-grid">
+                <!-- Les services seront générés par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Galerie</h2>
+            <div class="carousel">
+                <button class="carousel-button prev" aria-label="Image précédente">❮</button>
+                <div class="carousel-container">
+                    <!-- Les images seront générées par JavaScript -->
+                </div>
+                <button class="carousel-button next" aria-label="Image suivante">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder="Votre nom">
+                    <span class="validation-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder="Votre email">
+                    <span class="validation-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" required placeholder="Votre téléphone">
+                    <span class="validation-message"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required placeholder="Votre message"></textarea>
+                    <span class="validation-message"></span>
+                </div>
+                <button type="submit" class="submit-button">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ServicesPro. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
