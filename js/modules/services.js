@@ -1,6 +1,6 @@
 const services = [
   {
-    icon: '🚗',
+    icon: '🏠',
     title: 'Nettoyage à domicile',
     description:
       'Profitez d’un lavage intérieur et extérieur sans quitter votre domicile. Nous nous déplaçons avec tout le matériel nécessaire.',
