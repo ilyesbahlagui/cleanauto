@@ -10,25 +10,47 @@
 }
 
 .package-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: var(--white);
     border-radius: var(--radius);
     padding: 2rem;
     text-align: center;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    border: 2px solid transparent;
+    min-height: 300px;
 }
 
 .package-card:hover {
     transform: translateY(-5px);
 }
 
-.package-card.premium {
-    border: 2px solid var(--warning);
+/* Package type styles */
+.package-standard {
+    border-color: #4B5563; /* Gray */
+}
+
+.package-premium {
+    border-color: #7C3AED; /* Purple */
+    background: linear-gradient(to bottom right, var(--white), #F5F3FF);
+
+}
+
+.package-platinum {
+    border-color: #EAB308; /* Gold */
+    background: linear-gradient(to bottom right, var(--white), #FEFCE8);
+
+}
+
+.package-supplement {
+    border-color: #DC2626; /* Red */
+    border-style: dashed;
 }
 
 .package-icon {
     font-size: 3rem;
-    color: var(--primary);
     margin-bottom: 1rem;
 }
 
@@ -56,6 +78,7 @@
 
 .package-button {
     display: inline-block;
+    
     padding: 0.8rem 1.5rem;
     background: var(--primary);
     color: var(--white);
@@ -66,4 +89,18 @@
 
 .package-button:hover {
     background: var(--primary-dark);
+}
+.additional-info {
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .packages-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
 }
