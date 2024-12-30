@@ -13,4 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initGallery();
     initContact();
     initScrollReveal();
+    
+
+    
 });

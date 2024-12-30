@@ -54,4 +54,25 @@ export function initContact() {
             });
         }
     });
+
+
+    
 }
+
+
+window.autoFillMessageFromId = function(id) {
+
+    const messages = {
+        'standard': 'Bonjour,\n\nJe souhaite faire une réservation pour le forfait Standard.\n\nDétails du véhicule :\nType : [type]\nModèle : [modèle]\nDate : [date]\n\nCordialement.',
+        'premium': 'Bonjour,\n\nJe souhaite faire une réservation pour le forfait Premium.\n\nDétails du véhicule :\nType : [type]\nModèle : [modèle]\nDate : [date]\n\nCordialement.',
+        'platinum': 'Bonjour,\n\nJe souhaite faire une réservation pour le forfait Platinum.\n\nDétails du véhicule :\nType : [type]\nModèle : [modèle]\nDate : [date]\n\nCordialement.',
+        'demande': 'Bonjour,\n\nJe souhaite faire une réservation pour le forfait [forfait].\n\nDétails du véhicule :\nType : [type]\nModèle : [modèle]\nDate : [date]\n\nCordialement.',
+    };
+    const textArea = document.getElementById('message');
+    if (!textArea) return;
+
+    const message = messages[id];
+    if (message) {
+        textArea.value = message;
+    }
+};
