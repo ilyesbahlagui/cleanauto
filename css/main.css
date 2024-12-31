@@ -110,10 +110,14 @@ body {
     flex: 1 1 300px;
     max-width: 500px;
     padding: 1.5rem;
-    border-radius: 15px; /* Coins arrondis */
-    background-color: rgba(0, 0, 0, 0.7); /* Fond sombre */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordure fine et légère */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Effet d'ombre */
+    border-radius: 15px;
+    /* Coins arrondis */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fond sombre */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Bordure fine et légère */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    /* Effet d'ombre */
     text-align: center;
 }
 
@@ -130,7 +134,7 @@ body {
 .contact-section,
 .social-section {
     color: white;
-    /* Texte en blanc pour une meilleure lisibilité */
+
 }
 
 .contact-info .contact-item {
@@ -142,7 +146,10 @@ body {
     color: white;
 }
 
-
+.contact-item a {
+    text-decoration: none;
+    color: white;
+}
 
 /* Footer bottom */
 .footer-bottom {
@@ -189,6 +196,7 @@ body {
     .navbar-menu.active {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 1rem;
     }
 
