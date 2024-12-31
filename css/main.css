@@ -151,6 +151,13 @@ body {
     color: white;
 }
 
+/* Remove styles on Android and Safari */
+@supports (-webkit-touch-callout: none) {
+    .footer, .footer-section, .contact-section, .social-section, .contact-info .contact-item {
+        all: unset;
+    }
+}
+
 /* Footer bottom */
 .footer-bottom {
     width: 100%;
