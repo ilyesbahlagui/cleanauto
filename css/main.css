@@ -93,7 +93,14 @@ body {
     padding: 2rem 0;
     text-align: center;
 }
-
+.small-popup {
+    font-size: 1rem; 
+    border-radius: 10px; 
+}
+.swal2-confirm.confirm-button {
+    background-color: var(--primary) !important; 
+    color: var(--white) !important; 
+}
 /* Responsive */
 @media (max-width: 768px) {
     .navbar-menu {

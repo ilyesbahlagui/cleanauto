@@ -13,7 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
     initGallery();
     initContact();
     initScrollReveal();
-    
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "pAKWo-OTfOIbsz2w8",
+        });
+    })();
 
     
 });

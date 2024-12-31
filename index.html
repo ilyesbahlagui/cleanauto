@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/social.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
+
 
 <body>
     <nav class="navbar">
@@ -51,7 +55,8 @@
             <div class="packages-grid">
                 <!-- Les cartes seront générées par JavaScript -->
             </div>
-            <p class="additional-info">*Un supplément de 20 euros sera facturé pour les véhicules nécessitant un nettoyage intensif.</p>
+            <p class="additional-info">*Un supplément de 20 euros sera facturé pour les véhicules nécessitant un
+                nettoyage intensif.</p>
         </div>
     </section>
 
@@ -88,11 +93,11 @@
                     <span class="validation-message"></span>
                 </div>
                 <div class="form-group">
-                    <input type="email" id="email" required placeholder="Votre email">
+                    <input type="email" id="email" required placeholder="Votre email" >
                     <span class="validation-message"></span>
                 </div>
                 <div class="form-group">
-                    <input type="tel" id="phone" required placeholder="Votre téléphone">
+                    <input type="tel" id="phone" required placeholder="Votre téléphone" >
                     <span class="validation-message"></span>
                 </div>
                 <div class="form-group">
@@ -129,14 +134,16 @@
         </div>
     </div>
 
-
+    <script>
+        
+    </script>
 
     <footer class="footer">
         <div class="container">
             <p></p>
-        <script>
-            document.querySelector('.footer p').innerHTML = `&copy; ${new Date().getFullYear()} Clean Auto. Tous droits réservés.`;
-        </script>
+            <script>
+                document.querySelector('.footer p').innerHTML = `&copy; ${new Date().getFullYear()} Clean Auto. Tous droits réservés.`;
+            </script>
         </div>
     </footer>
 
@@ -146,4 +153,5 @@
 <script>
 
 </script>
+
 </html>
