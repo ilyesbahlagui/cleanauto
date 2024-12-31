@@ -33,8 +33,8 @@
                 <li><a href="#forfaits">Forfaits</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#galerie">Galerie</a></li>
-                <li><a href="#reseaux-sociaux">Réseaux sociaux</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#reseaux-sociaux">Réseaux sociaux</a></li>
             </ul>
         </div>
     </nav>
@@ -93,11 +93,11 @@
                     <span class="validation-message"></span>
                 </div>
                 <div class="form-group">
-                    <input type="email" id="email" required placeholder="Votre email" >
+                    <input type="email" id="email" required placeholder="Votre email">
                     <span class="validation-message"></span>
                 </div>
                 <div class="form-group">
-                    <input type="tel" id="phone" required placeholder="Votre téléphone" >
+                    <input type="tel" id="phone" required placeholder="Votre téléphone">
                     <span class="validation-message"></span>
                 </div>
                 <div class="form-group">
@@ -109,7 +109,7 @@
         </div>
     </section>
 
-    <div id="reseaux-sociaux" class="social-media-section">
+    <!-- <div id="reseaux-sociaux" class="social-media-section">
         <div class="container">
             <div class="social-media-content">
                 <div class="social-media-image">
@@ -132,20 +132,66 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <script>
-        
-    </script>
+ 
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <p></p>
             <script>
                 document.querySelector('.footer p').innerHTML = `&copy; ${new Date().getFullYear()} Clean Auto. Tous droits réservés.`;
             </script>
         </div>
+    </footer> -->
+    <footer class="footer">
+        <!-- Coordonnées -->
+        <div class="footer-section contact-section">
+            <h3>Coordonnées</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="icon-location"></i>
+                    <p>123 Rue de l'Auto, Paris 75000</p>
+                </div>
+                <div class="contact-item">
+                    <i class="icon-phone"></i>
+                    <p>+33 1 23 45 67 89</p>
+                </div>
+                <div class="contact-item">
+                    <i class="icon-mail"></i>
+                    <p>contact@cleanauto.fr</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Réseaux sociaux -->
+        <div id="reseaux-sociaux" class="footer-section social-section">
+            <h3>Suivez-nous</h3>
+            <p>Pour voir notre travail, restez connectés sur nos réseaux.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook"
+                    aria-label="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram"
+                    aria-label="Instagram"></a>
+                <a href="https://www.snapchat.com" target="_blank" class="social-icon snapchat"
+                    aria-label="Snapchat"></a>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>
+                © <script>document.write(new Date().getFullYear());</script> Clean Auto. Tous droits réservés.
+                <a href="#" target="_blank" class="legal-link">Mentions légales</a>
+            </p>
+        </div>
     </footer>
+
+
+    <style>
+ 
+    </style>
+
 
     <script type="module" src="js/main.js"></script>
 </body>
