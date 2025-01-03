@@ -1,46 +1,33 @@
-const images = [
-    {
-        url: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7',
-        caption: 'Image 1'
-    },
-    {
-        url: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8',
-        caption: 'Image 2'
-    },
-    {
-        url: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888',
-        caption: 'Image 3'
-    }
-];
+import { vehicles } from './vehicles.js';
 
-export function initGallery() {
-    const container = document.querySelector('.carousel-container');
-    if (!container) return;
-
-    // Create slides
-    container.innerHTML = images.map(image => `
-        <div class="carousel-slide">
-            <img src="${image.url}" alt="${image.caption}">
-            <div class="carousel-caption">${image.caption}</div>
-        </div>
-    `).join('');
-
-    let currentSlide = 0;
-    const slides = container.querySelectorAll('.carousel-slide');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-
-    function updateSlide() {
-        container.style.transform = `translateX(-${currentSlide * 100}%)`;
+export class Gallery {
+    constructor(containerId) {
+        this.container = document.getElementById(containerId);
+        this.render();
     }
 
-    prevButton?.addEventListener('click', () => {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        updateSlide();
-    });
+    createGalleryItem(vehicle) {
+        const item = document.createElement('div');
+        item.className = 'gallery-item';
+        item.innerHTML = `
+            <img src="${vehicle.thumbnail}" alt="${vehicle.name}">
+            <div class="gallery-item-info">
+                <h2>${vehicle.name}</h2>
+                <p>${vehicle.description}</p>
+            </div>
+        `;
+        return item;
+    }
 
-    nextButton?.addEventListener('click', () => {
-        currentSlide = (currentSlide + 1) % slides.length;
-        updateSlide();
-    });
+    render() {
+        const fragment = document.createDocumentFragment();
+        vehicles.forEach(vehicle => {
+            const item = this.createGalleryItem(vehicle);
+            item.addEventListener('click', () => {
+                document.dispatchEvent(new CustomEvent('openCarousel', { detail: vehicle }));
+            });
+            fragment.appendChild(item);
+        });
+        this.container.appendChild(fragment);
+    }
 }
