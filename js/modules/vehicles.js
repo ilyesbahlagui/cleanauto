@@ -52,23 +52,23 @@ export const vehicles = [
         id: 5,
         name: "Ford",
         description: "Super voiture américaine",
-        thumbnail: "./images/vehicules-galerie/ford-1.jpg",
+        thumbnail: "./images/vehicules-galerie/ford-1.JPG",
         images: [
-            "./images/vehicules-galerie/ford-5.jpg",
-            "./images/vehicules-galerie/ford-4.jpg",
-            "./images/vehicules-galerie/ford-2.jpg",
-            "./images/vehicules-galerie/ford-3.jpg",
+            "./images/vehicules-galerie/ford-5.JPG",
+            "./images/vehicules-galerie/ford-4.JPG",
+            "./images/vehicules-galerie/ford-2.JPG",
+            "./images/vehicules-galerie/ford-3.JPG",
         ]
     },
     {
         id: 6,
         name: "Toyota ",
         description: "Super voiture japonaise",
-        thumbnail: "./images/vehicules-galerie/toyota-2.jpg",
+        thumbnail: "./images/vehicules-galerie/toyota-2.JPG",
         images: [
-            "./images/vehicules-galerie/toyota-5.jpg",
-            "./images/vehicules-galerie/toyota-1.jpg",
-            "./images/vehicules-galerie/toyota-4.jpg"
+            "./images/vehicules-galerie/toyota-5.JPG",
+            "./images/vehicules-galerie/toyota-1.JPG",
+            "./images/vehicules-galerie/toyota-4.JPG"
         ]
     },
 ];
