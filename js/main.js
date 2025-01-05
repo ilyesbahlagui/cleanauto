@@ -1,7 +1,7 @@
 import { initNavigation } from './modules/navigation.js';
 import { initPackages } from './modules/packages.js';
 import { initServices } from './modules/services.js';
-// import { initGallery } from './modules/galleryv1.js';
+import { initModals } from './modules/modals.js';
 import { initContact } from './modules/contact.js';
 import { initScrollReveal } from './modules/scrollReveal.js';
 
@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
     initPackages();
     initServices();
+    initModals();
     // initGallery();
     initContact();
     initScrollReveal();

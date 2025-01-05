@@ -48,6 +48,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="font/font.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modals.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/packages.css">
     <link rel="stylesheet" href="css/gallery.css">
@@ -62,6 +63,8 @@
 
 
 <body>
+    <!-- Navbar  -->
+
     <nav class="navbar" aria-label="Menu principal">
         <div class="container">
             <div class="navbar-brand">Clean Auto</div>
@@ -78,7 +81,7 @@
             </ul>
         </div>
     </nav>
-
+    <!-- Header -->
     <header id="accueil" class="hero fade-in">
         <div class="hero-overlay"></div>
         <div class="container">
@@ -89,7 +92,7 @@
                 Rendez-vous</a>
         </div>
     </header>
-
+    <!--Forfaits  -->
     <section id="forfaits" class="packages" aria-label="Nos forfaits">
         <div class="container">
             <h2 class="section-title">Nos Forfaits</h2>
@@ -100,6 +103,7 @@
                 nettoyage intensif.</p>
         </div>
     </section>
+    <!-- Services -->
 
     <section id="services" class="services" aria-label="Nos services">
         <div class="container">
@@ -109,7 +113,7 @@
             </div>
         </div>
     </section>
-
+    <!-- Galerie -->
     <section id="galerie" aria-label="Galerie">
         <main class="gallery">
             <h2 class="section-title">Galerie</h2>
@@ -128,7 +132,7 @@
         </div>
     </section>
 
-
+    <!-- Contact -->
     <section id="contact" class="contact" aria-label="Contact">
         <div class="container">
             <h2 class="section-title">Contact</h2>
@@ -154,7 +158,7 @@
         </div>
     </section>
 
-
+    <!-- Footer -->
     <footer class="footer" aria-label="Pied de page">
         <!-- Coordonnées -->
         <div class="footer-section contact-section">
@@ -196,18 +200,43 @@
             <p>
                 ©
                 <script>document.write(new Date().getFullYear());</script> Clean Auto. Tous droits réservés.
-                <a href="#" target="_blank" class="legal-link">Mentions légales</a>
+                <!-- <a href="#" target="_blank" class="legal-link">Mentions légales</a>
+                <a href="#" target="_blank" class="legal-link">Mentions légales</a> -->
+                <a href="#" id="openLegalModal" class="legal-link">Mentions Légales</a> |
+                <a href="#" id="openTermsModal" class="legal-link">Conditions d'Utilisation</a>
             </p>
         </div>
     </footer>
 
+    <!-- Modals -->
+    <!-- Mentions Légales Modal -->
+    <div id="legalModal" class="legal-modal">
+        <div class="legal-modal-content">
+            <span class="legal-close" id="closeLegalModal">&times;</span>
+            <h2>Mentions Légales</h2>
+            <div class="modal-body">
+                <!-- Contenu des mentions légales -->
+                <p>Votre contenu des mentions légales ici...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conditions d'Utilisation Modal -->
+    <div id="termsModal" class="terms-modal">
+        <div class="terms-modal-content">
+            <span class="terms-close" id="closeTermsModal">&times;</span>
+            <h2>Conditions d'Utilisation</h2>
+            <div class="modal-body">
+                <!-- Contenu des conditions d'utilisation -->
+                <p>Votre contenu des conditions d'utilisation ici...</p>
+            </div>
+        </div>
+    </div>
 
     <script type="module" src="js/main.js"></script>
 
 </body>
 
-<script>
 
-</script>
 
 </html>
