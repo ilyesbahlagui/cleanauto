@@ -4,8 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clean Auto - Design Moderne</title>
+    <!-- SEO Meta -->
+    <meta name="description"
+        content="Clean Auto : Service professionnel de nettoyage voiture à Nîmes, Montpellier, Gard et Hérault. Lavage intérieur, extérieur, aspiration et lavage complet. Nettoyez votre voiture dès aujourd'hui avec nos forfaits adaptés.">
+    <meta property="og:description"
+        content="Clean Auto propose des services de lavage et nettoyage voiture à Nîmes, Montpellier et dans le Gard. Nettoyage intérieur, lavage extérieur et service rapide pour une voiture impeccable.">
 
+
+    <!-- Open Graph pour le SEO local -->
+    <meta property="og:title" content="Nettoyage Automobile - Nîmes, Montpellier, Gard">
+    <meta property="og:description"
+        content="Découvrez nos services de nettoyage auto et detailing pour un véhicule toujours propre. Prenez rendez-vous à Nîmes, Montpellier, ou dans le Gard.">
+    <meta property="og:url" content="https://votre-site.fr">
+    <meta property="og:type" content="website">
+
+    <!-- JSON-LD pour le référencement local -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Clean Auto",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Rue de l'Auto",
+            "addressLocality": "Nîmes",
+            "postalCode": "30000",
+            "addressRegion": "Occitanie",
+            "addressCountry": "FR"
+          },
+          "telephone": "+33 1 23 45 67 89",
+          "url": "https://votre-site.fr",
+          "description": "Clean Auto : Services de nettoyage automobile à Nîmes, Montpellier, Hérault, et Gard. Lavage intérieur et extérieur pour une voiture impeccable.",
+          "openingHours": "Mo-Fr 08:00-18:00",
+          "image": "https://votre-site.fr/images/nettoyage-voiture.jpg",
+          "areaServed": ["Nîmes", "Montpellier", "Hérault", "Gard", "Occitanie"],
+          "priceRange": "€€"
+        }
+        </script>
+
+    <title>Nettoyage Voiture à Nîmes et Montpellier - Réservez avec Clean Auto</title>
+
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="font/font.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
@@ -22,7 +62,7 @@
 
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Menu principal">
         <div class="container">
             <div class="navbar-brand">Clean Auto</div>
             <div class="navbar-toggle">
@@ -42,14 +82,15 @@
     <header id="accueil" class="hero fade-in">
         <div class="hero-overlay"></div>
         <div class="container">
-            <h1 class="slide-in-top">Service de Nettoyage Automobile</h1>
-            <p class="slide-in-bottom">Nous mettons un point d'honneur à satisfaire nos clients</p>
+            <h1 class="slide-in-top">Nettoyage Automobile Professionnel à Nîmes et Montpellier</h1>
+            <p class="slide-in-bottom">Spécialistes du lavage intérieur et extérieur, nous offrons des services de
+                detailing automobile dans le Gard et l'Hérault. Satisfaction garantie.</p>
             <a href="#contact" class="cta-button pulse" onclick="autoFillMessageFromId('demande')">Prenez
                 Rendez-vous</a>
         </div>
     </header>
 
-    <section id="forfaits" class="packages">
+    <section id="forfaits" class="packages" aria-label="Nos forfaits">
         <div class="container">
             <h2 class="section-title">Nos Forfaits</h2>
             <div class="packages-grid">
@@ -60,7 +101,7 @@
         </div>
     </section>
 
-    <section id="services" class="services">
+    <section id="services" class="services" aria-label="Nos services">
         <div class="container">
             <h2 class="section-title">Nos Services</h2>
             <div class="services-grid">
@@ -68,8 +109,8 @@
             </div>
         </div>
     </section>
-    
-    <section id="galerie">
+
+    <section id="galerie" aria-label="Galerie">
         <main class="gallery">
             <h2 class="section-title">Galerie</h2>
 
@@ -88,21 +129,7 @@
     </section>
 
 
-
-    <!-- <section id="galerie" class="gallery">
-        <div class="container">
-            <h2 class="section-title">Galerie</h2>
-            <div class="carousel">
-                <button class="carousel-button prev" aria-label="Image précédente">❮</button>
-                <div class="carousel-container"> -->
-    <!-- Les images seront générées par JavaScript -->
-    <!-- </div>
-                <button class="carousel-button next" aria-label="Image suivante">❯</button>
-            </div>
-        </div>
-    </section> -->
-
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" aria-label="Contact">
         <div class="container">
             <h2 class="section-title">Contact</h2>
             <form id="contact-form" class="contact-form">
@@ -128,43 +155,7 @@
     </section>
 
 
-
-    <!-- <div id="reseaux-sociaux" class="social-media-section">
-        <div class="container">
-            <div class="social-media-content">
-                <div class="social-media-image">
-                    <img src="images/nissan-reseaux-sociaux.jpg" alt="Groupe de personnes">
-                </div>
-                <div class="social-media-text">
-                    <h2>Suivez-nous sur les réseaux sociaux</h2>
-                    <p>
-                        Découvrez nos dernières mises à jour et restez connectés pour toutes les nouveautés.
-                    </p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com" target="_blank" class="social-icon facebook"
-                            aria-label="Facebook"></a>
-                        <a href="https://www.instagram.com" target="_blank" class="social-icon instagram"
-                            aria-label="Instagram"></a>
-                        <a href="https://www.snapchat.com" target="_blank" class="social-icon snapchat"
-                            aria-label="Snapchat"></a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-
-    <!-- <footer class="footer">
-        <div class="container">
-            <p></p>
-            <script>
-                document.querySelector('.footer p').innerHTML = `&copy; ${new Date().getFullYear()} Clean Auto. Tous droits réservés.`;
-            </script>
-        </div>
-    </footer> -->
-    <footer class="footer">
+    <footer class="footer" aria-label="Pied de page">
         <!-- Coordonnées -->
         <div class="footer-section contact-section">
             <h3>Coordonnées</h3>
@@ -211,12 +202,8 @@
     </footer>
 
 
-    <style>
-
-    </style>
-
-
     <script type="module" src="js/main.js"></script>
+
 </body>
 
 <script>
