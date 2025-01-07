@@ -67,6 +67,9 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary);
+   
+    display: flex;
+    align-items: center;
 }
 
 .navbar-menu {
@@ -84,6 +87,12 @@ body {
 
 .navbar-menu a:hover {
     color: var(--primary);
+}
+.logo-rond {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 1rem!important;
 }
 
 /* Footer */
@@ -161,7 +170,6 @@ body {
         
     }
 }
-
 
 
 /* Footer bottom */

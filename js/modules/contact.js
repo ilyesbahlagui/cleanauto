@@ -1,5 +1,6 @@
 export function initContact() {
     const form = document.getElementById('contact-form');
+    const acceptTerms = document.getElementById('accept-terms');
     if (!form) return;
 
     const validateEmail = (email) => {
@@ -37,6 +38,8 @@ export function initContact() {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         let isValid = true;
+        const submitButton = form.querySelector('.submit-button');
+        submitButton.disabled = true;
     
         form.querySelectorAll('input, textarea').forEach(input => {
             const value = input.value.trim();
@@ -45,6 +48,11 @@ export function initContact() {
                 showValidation(input, false, 'Ce champ est requis');
             }
         });
+
+        if (!acceptTerms.checked) {
+            alert('Veuillez accepter les conditions d\'utilisation.');
+            isValid = false;
+        }
     
         if (isValid) {
             let params = {
@@ -79,6 +87,7 @@ export function initContact() {
                     form.querySelectorAll('input, textarea').forEach(input => {
                         input.style.borderColor = '';
                     });
+                    submitButton.disabled = false;
                 })
                 .catch(function (error) {
                     console.log('FAILED...', error);
@@ -98,12 +107,12 @@ export function initContact() {
                             confirmButton: 'confirm-button' // Classe CSS pour le bouton de confirmation
                         }
                     });
+                    submitButton.disabled = false;
                 });
+        } else {
+            submitButton.disabled = false;
         }
     });
-    
-
-
 }
 
 
@@ -123,23 +132,3 @@ window.autoFillMessageFromId = function (id) {
         textArea.value = message;
     }
 };
-
-// document.getElementById('contact-form').addEventListener('submit', function (event) {
-//     event.preventDefault();
-//     // Generate the parameter object
-//     var params = {
-//         email: document.getElementById('email').value,
-//         name: document.getElementById('name').value,
-//         phone: document.getElementById('phone').value,
-//         message: document.getElementById('message').value
-//     };
-//     // Send the email
-//     emailjs.send('service_uc64r12', 'template_cc1dswy', params)
-//         .then(function (response) {
-//             console.log('SUCCESS!', response.status, response.text);
-//             alert('Email successfully sent!');
-//         }, function (error) {
-//             console.log('FAILED...', error);
-//             alert('Failed to send email. Please try again later.');
-//         });
-// });

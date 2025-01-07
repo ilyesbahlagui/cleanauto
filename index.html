@@ -45,13 +45,13 @@
     <title>Nettoyage Voiture à Nîmes et Montpellier - Réservez avec Clean Auto</title>
 
 
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
     <link href="font/font.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/modals.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/packages.css">
-    <link rel="stylesheet" href="css/gallery.css">
+    <!-- <link rel="stylesheet" href="css/gallery.css"> -->
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/animations.css">
@@ -67,7 +67,12 @@
 
     <nav class="navbar" aria-label="Menu principal">
         <div class="container">
-            <div class="navbar-brand">Clean Auto</div>
+            <div class="navbar-brand">
+                <img src="images/logo.webp" alt="Logo Clean Auto" class="logo-rond">
+                <p>
+                    Clean Auto
+                </p>
+            </div>
             <div class="navbar-toggle">
                 <span></span><span></span><span></span>
             </div>
@@ -75,12 +80,13 @@
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#forfaits">Forfaits</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#galerie">Galerie</a></li>
+                <!-- <li><a href="#galerie">Galerie</a></li> -->
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#reseaux-sociaux">Réseaux sociaux</a></li>
             </ul>
         </div>
     </nav>
+
     <!-- Header -->
     <header id="accueil" class="hero fade-in">
         <div class="hero-overlay"></div>
@@ -114,7 +120,7 @@
         </div>
     </section>
     <!-- Galerie -->
-    <section id="galerie" aria-label="Galerie">
+    <!-- <section id="galerie" aria-label="Galerie">
         <main class="gallery">
             <h2 class="section-title">Galerie</h2>
 
@@ -130,7 +136,7 @@
             <button class="nav-button next" id="nextButton">&gt;</button>
             <div class="dots-container" id="dotsContainer"></div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Contact -->
     <section id="contact" class="contact" aria-label="Contact">
@@ -153,7 +159,12 @@
                     <textarea id="message" required placeholder="Votre message" style="min-height: 250px;"></textarea>
                     <span class="validation-message"></span>
                 </div>
-                <button type="submit" class="submit-button">Envoyer</button>
+                <div>
+                    <input type="checkbox" id="accept-terms" name="accept-terms" class="accept-terms">
+                    <label for="accept-terms">J'accepte les <a  href="" id="openTermsModal" class="legal-link">Conditions d'Utilisation</label>
+                    <span class="validation-message"></span>
+                </div>
+                <button type="submit" class="submit-button" >Envoyer</button>
             </form>
         </div>
     </section>
@@ -164,18 +175,18 @@
         <div class="footer-section contact-section">
             <h3>Coordonnées</h3>
             <div class="contact-info">
-                <div class="contact-item">
+                <!-- <div class="contact-item">
                     <i class="icon-location"></i>
                     <p><a href="https://www.google.com/maps/search/?api=1&query=123+Rue+de+l'Auto,+Paris+75000"
                             target="_blank">123 Rue de l'Auto, Paris 75000</a></p>
-                </div>
+                </div> -->
                 <div class="contact-item">
                     <i class="icon-phone"></i>
-                    <p><a href="tel:+33123456789">+33 1 23 45 67 89</a></p>
+                    <p><a href="tel:+33123456789">+33 07 85 13 45 80</a></p>
                 </div>
                 <div class="contact-item">
                     <i class="icon-mail"></i>
-                    <p><a href="mailto:contact@cleanauto.fr">contact@cleanauto.fr</a></p>
+                    <p><a href="mailto:contact@cleanauto.fr">cleanauto30generac@outlook.fr</a></p>
                 </div>
             </div>
 
@@ -197,6 +208,7 @@
 
         <!-- Footer Bottom -->
         <div class="footer-bottom">
+            https://entreprendre.service-public.fr/vosdroits/F31228
             <p>
                 ©
                 <script>document.write(new Date().getFullYear());</script> Clean Auto. Tous droits réservés.
@@ -215,28 +227,23 @@
             <span class="legal-close" id="closeLegalModal">&times;</span>
             <h2>Mentions Légales</h2>
             <div class="modal-body">
-                <h3>Identité de l'éditeur</h3>
-                <p><strong>Nom de l'entreprise :</strong> Clean Auto</p>
-                <p><strong>Forme juridique :</strong> SARL</p>
-                <p><strong>Adresse :</strong> 123 Rue de l'Auto, 30000 Nîmes, France</p>
-                <p><strong>Numéro SIRET :</strong> 123 456 789 00012</p>
-                <p><strong>Directeur de publication :</strong> Jean Dupont</p>
-                <p><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
-                <p><strong>Email :</strong> <a href="mailto:contact@cleanauto.fr">contact@cleanauto.fr</a></p>
+                <p><strong>Raison sociale :</strong> CLEAN AUTO GENERAC</p>
+                <p><strong>Nom du dirigeant :</strong> Monsieur Benjamin Marcel Boursault</p>
+                <p><strong>Dénomination usuelle :</strong> CLEAN AUTO GENERAC</p>
+                <p><strong>Adresse :</strong> 1 B Impasse des Lauriers Roses, 30510 GENERAC, France</p>
+                <p><strong>Siret :</strong> 812 841 484 00023</p>
+                <p><strong>Activité principale :</strong> Entretien et réparation de véhicules automobiles légers (code
+                    NAF 45.20A)</p>
+                <p><strong>Catégorie juridique :</strong> Entrepreneur individuel</p>
+                <p><strong>Statut de l'entreprise :</strong> PME - Petite ou Moyenne Entreprise</p>
+                <p><strong>Numéro de téléphone :</strong> [À compléter]</p>
+                <p><strong>Adresse e-mail :</strong> [À compléter]</p>
 
-                <h3>Hébergement</h3>
-                <p><strong>Hébergeur :</strong> OVH</p>
-                <p><strong>Adresse :</strong> 2 rue Kellermann, 59100 Roubaix, France</p>
-                <p><strong>Téléphone :</strong> +33 9 72 10 10 07</p>
+                <h3>Hébergement du site :</h3>
+                <p><strong>Nom de l'hébergeur :</strong> [Nom de l'hébergeur]</p>
+                <p><strong>Adresse de l'hébergeur :</strong> [Adresse de l'hébergeur]</p>
+                <p><strong>Numéro de téléphone de l'hébergeur :</strong> [Numéro de téléphone de l'hébergeur]</p>
 
-                <h3>Protection des données personnelles</h3>
-                <p>Conformément à la loi Informatique et Libertés du 6 janvier 1978, vous disposez d'un droit d'accès,
-                    de rectification et de suppression des données personnelles vous concernant. Vous pouvez exercer ce
-                    droit en nous contactant par email à <a href="mailto:contact@cleanauto.fr">contact@cleanauto.fr</a>.
-                </p>
-
-                <h3>Cookies</h3>
-                <p>Ce site n'utilise pas de cookies.</p>
             </div>
         </div>
     </div>
@@ -247,31 +254,44 @@
             <span class="terms-close" id="closeTermsModal">&times;</span>
             <h2>Conditions d'Utilisation</h2>
             <div class="modal-body">
-                <h3>1. Acceptation des conditions</h3>
-                <p>En accédant à ce site web, vous acceptez de vous conformer aux conditions d'utilisation définies
-                    ci-dessous. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser ce site.</p>
+                <p><strong>1. Objet du site :</strong> Le site [Nom du site] est dédié à la présentation des services de
+                    nettoyage et d'entretien automobile proposés par CLEAN AUTO GENERAC. Il permet aux utilisateurs de
+                    prendre contact avec l'entreprise pour bénéficier de ces services.</p>
 
-                <h3>2. Utilisation du site</h3>
-                <p>Vous vous engagez à utiliser ce site de manière légale et éthique. Toute utilisation illégale du
-                    site, y compris la violation des droits d'auteur ou l'usage malveillant, entraînera la résiliation
-                    de votre accès au site.</p>
+                <p><strong>2. Collecte et utilisation des données personnelles :</strong> Aucune donnée personnelle
+                    n'est collectée par le site. Le formulaire de contact est uniquement destiné à permettre aux
+                    utilisateurs de prendre contact avec CLEAN AUTO GENERAC. Les informations saisies dans ce formulaire
+                    sont uniquement utilisées pour répondre à votre demande. Aucune donnée n'est stockée dans une base
+                    de données ni utilisée à des fins commerciales ou marketing.</p>
 
-                <h3>3. Propriété intellectuelle</h3>
-                <p>Le contenu de ce site, y compris les textes, images et logos, est protégé par des droits d'auteur.
-                    Vous n'êtes pas autorisé à reproduire ou distribuer ce contenu sans notre autorisation préalable.
-                </p>
+                <p><strong>3. Cookies :</strong> Le site n’utilise pas de cookies. Aucune donnée de navigation
+                    personnelle n'est collectée ni suivie à des fins d'analyse ou de publicité.</p>
 
-                <h3>4. Limitations de responsabilité</h3>
-                <p>Nous ne serons pas responsables des dommages directs ou indirects découlant de l'utilisation ou de
-                    l'incapacité d'utiliser ce site.</p>
+                <p><strong>4. Responsabilité :</strong> Le site CLEAN AUTO GENERAC met tout en œuvre pour fournir des
+                    informations précises et actualisées. Cependant, l’entreprise ne saurait être tenue responsable des
+                    erreurs, omissions ou interruptions dans la mise à jour des informations publiées.</p>
 
-                <h3>5. Modification des conditions</h3>
-                <p>Nous nous réservons le droit de modifier ces conditions d'utilisation à tout moment. Les
-                    modifications entreront en vigueur dès leur publication sur le site.</p>
+                <p><strong>5. Propriété intellectuelle :</strong> Le contenu du site, y compris les textes, images,
+                    logos, graphismes, et autres éléments, est la propriété exclusive de CLEAN AUTO GENERAC ou de ses
+                    partenaires. Toute reproduction ou représentation, totale ou partielle, du site ou de son contenu
+                    est interdite sans autorisation préalable.</p>
 
-                <h3>6. Droit applicable</h3>
-                <p>Les présentes conditions sont régies par la législation française. Tout litige sera soumis à la
-                    compétence des tribunaux français.</p>
+                <p><strong>6. Liens externes :</strong> Le site peut contenir des liens vers d'autres sites internet.
+                    CLEAN AUTO GENERAC ne peut être tenue responsable du contenu ou du fonctionnement de ces sites
+                    externes.</p>
+
+                <p><strong>7. Modification des conditions :</strong> CLEAN AUTO GENERAC se réserve le droit de modifier
+                    ces conditions d'utilisation à tout moment. Les utilisateurs sont invités à consulter régulièrement
+                    cette page pour prendre connaissance des éventuelles mises à jour.</p>
+
+                <p><strong>8. Droit applicable :</strong> Les présentes conditions d'utilisation sont soumises au droit
+                    français. En cas de litige, les tribunaux compétents seront ceux du lieu de l'établissement de
+                    l'entreprise.</p>
+
+                <p><strong>Protection des données personnelles :</strong> Conformément à la législation en vigueur
+                    (RGPD), vous disposez d’un droit d'accès, de rectification, d’effacement, et d'opposition sur les
+                    données personnelles que vous fournissez via le formulaire de contact. Pour exercer ces droits, vous
+                    pouvez contacter CLEAN AUTO GENERAC à l'adresse e-mail mentionnée ci-dessus.</p>
             </div>
         </div>
     </div>

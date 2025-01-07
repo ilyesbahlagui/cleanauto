@@ -5,17 +5,23 @@ const services = [
     description:
       'Profitez d’un lavage intérieur et extérieur sans quitter votre domicile. Nous nous déplaçons avec tout le matériel nécessaire.',
   },
-  {
-    icon: '🏢',
-    title: 'Nettoyage dans notre local',
-    description:
-      'Un service complet dans notre local équipé pour un résultat professionnel. Rendez-nous visite et repartez avec une voiture éclatante.',
-  },
+  // {
+  //   icon: '🏢',
+  //   title: 'Nettoyage dans notre local',
+  //   description:
+  //     'Un service complet dans notre local équipé pour un résultat professionnel. Rendez-nous visite et repartez avec une voiture éclatante.',
+  // },
   {
     icon: '⚙️',
     title: 'Entretien personnalisé',
     description:
       'Adapté à vos besoins spécifiques : nettoyage en profondeur, désinfection de l’habitacle, ou soin particulier pour votre véhicule.',
+  },
+  {
+    icon: '🧴',
+    title: 'Produits haut de gamme',
+    description:
+      'Nous utilisons exclusivement des produits de nettoyage de qualité supérieure, pour garantir un soin optimal et des résultats durables pour votre véhicule.',
   },
 ];
 export function initServices() {
