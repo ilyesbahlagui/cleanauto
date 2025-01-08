@@ -249,4 +249,9 @@ body {
     .contact-item a {
         white-space: nowrap;
     }
+    .swal2-popup {
+        width: 100%!important;
+        word-break: keep-all;
+       
+    }
 }

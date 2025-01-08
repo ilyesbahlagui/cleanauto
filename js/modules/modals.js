@@ -79,12 +79,12 @@ export function initModals() {
             focusConfirm: false,
             confirmButtonText: 'Fermer',
             confirmButtonColor: ' #007BFF',
-            width: '50%',
+            width: '80%',
             padding: '10px',
             background: '#fff',
             customClass: {
                 popup: 'swal2-popup',
-                content: 'text-left'
+
             }
 
         });
