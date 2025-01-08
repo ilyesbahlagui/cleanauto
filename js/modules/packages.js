@@ -49,7 +49,7 @@ export function initPackages() {
             <ul class="package-features">
                 ${pkg.features.map((feature) => `<li>${feature}</li>`).join('')}
             </ul>
-             ${pkg.type !== 'supplement' ? `<div ><a href="#contact" class="package-button" onclick="autoFillMessageFromId('${pkg.type}')">Nous Contacter</a></div>` : ''}
+             ${pkg.type !== 'supplement' ? `<div ><a class="package-button contact-button"  >Nous Contacter</a></div>` : ''}
            
         </div>
     `

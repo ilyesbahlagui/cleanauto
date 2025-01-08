@@ -15,17 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
     initPackages();
     initServices();
     initModals();
-    // initGallery();
+    
     initContact();
     initScrollReveal();
     new Gallery('vehicleGallery');
     new Carousel();
-    (function() {
-        // https://dashboard.emailjs.com/admin/account
-        emailjs.init({
-          publicKey: "pAKWo-OTfOIbsz2w8",
-        });
-    })();
-
+ 
     
 });

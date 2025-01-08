@@ -53,10 +53,8 @@
     <link rel="stylesheet" href="css/packages.css">
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/services.css">
-    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/social.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
@@ -95,7 +93,7 @@
             </h1>
             <p class="slide-in-bottom">Experts en lavage intérieur et extérieur, nous proposons des services de
                 detailing automobile dans le Gard et l'Hérault.</p>
-            <a href="#contact" class="cta-button pulse" onclick="autoFillMessageFromId('demande')">Prenez
+            <a href="#" class="cta-button pulse contact-button">Prenez
                 Rendez-vous</a>
         </div>
     </header>
@@ -139,38 +137,6 @@
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact" aria-label="Contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                    <input type="text" id="name" required placeholder="Votre nom">
-                    <span class="validation-message"></span>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" required placeholder="Votre email">
-                    <span class="validation-message"></span>
-                </div>
-                <div class="form-group">
-                    <input type="tel" id="phone" required placeholder="Votre téléphone">
-                    <span class="validation-message"></span>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" required placeholder="Votre message" style="min-height: 250px;"></textarea>
-                    <span class="validation-message"></span>
-                </div>
-                <div>
-                    <input type="checkbox" id="accept-terms" name="accept-terms" class="accept-terms">
-                    <label for="accept-terms">J'accepte les <a href="" id="openTermsModal" class="legal-link">Conditions
-                            d'Utilisation</label>
-                    <span class="validation-message"></span>
-                </div>
-                <button type="submit" class="submit-button">Envoyer</button>
-            </form>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer" aria-label="Pied de page">
         <!-- Coordonnées -->
@@ -178,11 +144,11 @@
             <h3>Contact</h3>
             <div class="contact-info">
                 <div class="contact-item">
-                    <i class="icon-phone"></i>
+                    <i class="icon-phone">📞</i>
                     <p><a href="tel:+33123456789">+33 07 85 13 45 80</a></p>
                 </div>
                 <div class="contact-item">
-                    <i class="icon-mail"></i>
+                    <i class="icon-mail">📧</i>
                     <p><a href="mailto:cleanauto30generac@outlook.fr">cleanauto30generac@outlook.fr</a></p>
                 </div>
             </div>
@@ -209,8 +175,7 @@
             <p>
                 ©
                 <script>document.write(new Date().getFullYear());</script> Clean Auto. Tous droits réservés.
-                <!-- <a href="#" target="_blank" class="legal-link">Mentions légales</a>
-                <a href="#" target="_blank" class="legal-link">Mentions légales</a> -->
+        
                 <a href="#" id="openLegalModal" >Mentions Légales & Conditions d'Utilisation</a>
 
             </p>

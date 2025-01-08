@@ -78,7 +78,7 @@ export function initModals() {
             showCloseButton: true,
             focusConfirm: false,
             confirmButtonText: 'Fermer',
-            confirmButtonColor: '#007BFF',
+            confirmButtonColor: ' #007BFF',
             width: '50%',
             padding: '10px',
             background: '#fff',
