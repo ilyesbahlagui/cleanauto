@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // initGallery();
     initContact();
     initScrollReveal();
-    // new Gallery('vehicleGallery');
-    // new Carousel();
+    new Gallery('vehicleGallery');
+    new Carousel();
     (function() {
         // https://dashboard.emailjs.com/admin/account
         emailjs.init({

@@ -33,16 +33,6 @@ const packages = [
     icon: '💎', 
     type: 'platinum'
   },
-  // {
-  //   title: 'Supplément voiture très sale',
-  //   price: '+20€',
-  //   features: [
-  //     'Appliqué aux véhicules nécessitant un nettoyage intensif',
-  //     'Diagnostic et devis gratuits',
-  //   ],
-  //   icon: '⚠️',
-  //   type: 'supplement'
-  // },
 ];
 
 export function initPackages() {
@@ -59,7 +49,7 @@ export function initPackages() {
             <ul class="package-features">
                 ${pkg.features.map((feature) => `<li>${feature}</li>`).join('')}
             </ul>
-             ${pkg.type !== 'supplement' ? `<div ><a href="#contact" class="package-button" onclick="autoFillMessageFromId('${pkg.type}')">Choisir</a></div>` : ''}
+             ${pkg.type !== 'supplement' ? `<div ><a href="#contact" class="package-button" onclick="autoFillMessageFromId('${pkg.type}')">Nous Contacter</a></div>` : ''}
            
         </div>
     `

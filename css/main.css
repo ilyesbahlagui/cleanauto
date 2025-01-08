@@ -67,7 +67,7 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary);
-   
+
     display: flex;
     align-items: center;
 }
@@ -88,11 +88,12 @@ body {
 .navbar-menu a:hover {
     color: var(--primary);
 }
+
 .logo-rond {
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    margin-right: 1rem!important;
+    margin-right: 1rem !important;
 }
 
 /* Footer */
@@ -159,15 +160,16 @@ body {
 
     text-decoration: none;
     color: white;
-    
+
 }
+
 /* Supprimer les styles par défaut des liens sur iPhone (Safari mobile) */
 @supports (-webkit-touch-callout: none) {
     .contact-item a {
-        all: unset  !important;
+        all: unset !important;
         text-decoration: none;
         color: white;
-        
+
     }
 }
 
@@ -182,7 +184,7 @@ body {
 }
 
 .footer-bottom a {
-    color: var(--secondary);
+    color: white;
     text-decoration: none;
 }
 
