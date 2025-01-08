@@ -252,7 +252,7 @@ body {
     }
     .swal2-popup {
         width: 100%!important;
-        word-break: keep-all;
+         word-break: keep-all;
        
     }
 }
