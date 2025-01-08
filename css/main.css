@@ -187,9 +187,11 @@ body {
     color: white;
     text-decoration: none;
 }
- .contact-item .icon-mail, .icon-phone {
+
+.contact-item .icon-mail, .icon-phone {
     font-style: normal;
 }
+
 .footer-bottom a:hover {
     text-decoration: underline;
 }
@@ -203,6 +205,11 @@ body {
 .swal2-confirm.confirm-button {
     background-color: var(--primary) !important;
     color: var(--white) !important;
+}
+
+/* Modal  */
+.modal-body p {
+    text-align: left !important;
 }
 
 /* Responsive */
@@ -237,5 +244,9 @@ body {
         background: var(--dark);
         margin: 5px 0;
         transition: var(--transition);
+    }
+
+    .contact-item a {
+        white-space: nowrap;
     }
 }
