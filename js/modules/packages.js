@@ -3,7 +3,7 @@ import { getPackageStyle } from './packageStyles.js';
 const packages = [
   {
     title: 'Standard',
-    price: '50€',
+    price: '35€',
     features: [
       'Aspiration : tapis, moquettes, sièges, coffre',
       'Nettoyage plastiques et vitres',
@@ -13,7 +13,7 @@ const packages = [
   },
   {
     title: 'Premium',
-    price: '100€',
+    price: '75€',
     features: [
       'Aspiration complète',
       'Shampouineuse : moquettes, tapis, sièges, coffre',
@@ -24,7 +24,7 @@ const packages = [
   },
   {
     title: 'Platinum',
-    price: '140€',
+    price: '100€',
     features: [
       'Lavage intérieur complet',
       'Shampouineuse et nettoyage plastiques',
