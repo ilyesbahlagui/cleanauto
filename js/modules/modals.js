@@ -8,7 +8,7 @@ export function initModals() {
         <div class="modal-body">
             <h3>Article 1 - Informations légales</h3>
             <p>Le site est édité par :</p>
-            <p><strong>Nom de l’éditeur :</strong> MONSIEUR BENJAMIN MARCEL BOURSAULT EI </p>
+            <p><strong>Nom du représentant légal (chef d’entreprise) :</strong> MONSIEUR BENJAMIN MARCEL BOURSAULT EI </p>
             <p><strong>Nom de l'entreprise :</strong> CLEAN AUTO GENERAC</p>
             <p><strong>Adresse :</strong> 1 B Impasse des Lauriers Roses, 30510 Générac, France</p>
             <p><strong>Statut juridique :</strong> Entrepreneur individuel</p>
