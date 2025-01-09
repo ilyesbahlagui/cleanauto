@@ -8,21 +8,25 @@ export function initModals() {
         <div class="modal-body">
             <h3>Article 1 - Informations légales</h3>
             <p>Le site est édité par :</p>
-            <p><strong>Nom de l’éditeur :</strong> MONSIEUR BENJAMIN MARCEL BOURSAULT</p>
+            <p><strong>Nom de l’éditeur :</strong> MONSIEUR BENJAMIN MARCEL BOURSAULT EI </p>
+            <p><strong>Nom de l'entreprise :</strong> CLEAN AUTO GENERAC</p>
             <p><strong>Adresse :</strong> 1 B Impasse des Lauriers Roses, 30510 Générac, France</p>
             <p><strong>Statut juridique :</strong> Entrepreneur individuel</p>
             <p><strong>Numéro SIREN :</strong> 812 841 484</p>
             <p><strong>Numéro SIRET :</strong> 812 841 484 00023</p>
             <p><strong>Numéro TVA Intracommunautaire :</strong> FR45812841484</p>
-            <p><strong>Activité principale :</strong> Entretien et réparation de véhicules automobiles légers (Code APE : 45.20A)</p>
+            <p><strong>Activité principale déclarée :</strong> Nettoyage automobile</p>
+            <p><strong>Code NAF ou APE:</strong> Entretien et réparation de véhicules automobiles légers (Code APE : 45.20A)</p>
             <p><strong>Convention collective appliquée :</strong> Services de l'automobile (1090)</p>
+            <p><strong>Secteur d'activité :</strong>Commerce réparation d'automobiles et motocycles</p>
             <p><strong>Date de création de l’entreprise :</strong> 10 août 2015</p>
             <p><strong>Adresse e-mail :</strong> cleanauto30generac@outlook.fr</p>
+            <p><strong>Téléphone :</strong> +33 07 85 13 45 80</p>
             
             <p>Le site est hébergé par :</p>
-            <p><strong>Hébergeur :</strong> OVHcloud</p>
-            <p><strong>Adresse :</strong> 2 rue Kellermann, 59100 Roubaix, France</p>
-            <p><strong>Téléphone :</strong> +33 9 72 10 10 07</p>
+            <p><strong>Hébergeur :</strong> o2Switch</p>
+            <p><strong>Adresse :</strong> Chem. des Pardiaux, 63000 Clermont-Ferrand, France</p>
+            <p><strong>Téléphone :</strong> 04 44 44 60 40</p>
             
             <h3>Article 2 - Accès au site</h3>
             <p>L’accès au site et son utilisation sont réservés à un usage strictement personnel. Vous vous engagez à ne pas utiliser ce site et les informations ou données qui y figurent à des fins commerciales, politiques ou publicitaires.</p>
