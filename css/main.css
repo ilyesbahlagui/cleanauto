@@ -90,10 +90,13 @@ body {
 }
 
 .logo-rond {
-    border-radius: 50%;
-    height: 60px;
-    width: 60px;
+
+    width: 150px;
     margin-right: 1rem !important;
+    object-fit: cover;
+    transform: scale(1.7);
+    transition: var(--transition);
+
 }
 
 /* Footer */
@@ -254,5 +257,14 @@ body {
         width: 100%!important;
          word-break: keep-all;
        
+    }
+
+    .logo-rond {
+
+        width: 100px;
+        transform: scale(2.5);
+        margin-left: 2rem !important;
+
+    
     }
 }
